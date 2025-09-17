@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this._ProductName = new System.Windows.Forms.Label();
+            this._Category = new System.Windows.Forms.Label();
+            this._MfgDate = new System.Windows.Forms.Label();
+            this._ExpDate = new System.Windows.Forms.Label();
+            this._Quantity = new System.Windows.Forms.Label();
+            this._SellPrice = new System.Windows.Forms.Label();
+            this._Description = new System.Windows.Forms.Label();
             this.btnAddProduct = new System.Windows.Forms.Button();
             this.txtQuantity = new System.Windows.Forms.TextBox();
             this.txtProductName = new System.Windows.Forms.TextBox();
@@ -58,68 +58,68 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Add Product";
             // 
-            // label2
+            // _ProductName
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(59, 119);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Product";
+            this._ProductName.AutoSize = true;
+            this._ProductName.Location = new System.Drawing.Point(59, 119);
+            this._ProductName.Name = "_ProductName";
+            this._ProductName.Size = new System.Drawing.Size(44, 13);
+            this._ProductName.TabIndex = 1;
+            this._ProductName.Text = "Product";
             // 
-            // label3
+            // _Category
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(59, 158);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Category";
+            this._Category.AutoSize = true;
+            this._Category.Location = new System.Drawing.Point(59, 158);
+            this._Category.Name = "_Category";
+            this._Category.Size = new System.Drawing.Size(49, 13);
+            this._Category.TabIndex = 2;
+            this._Category.Text = "Category";
             // 
-            // label4
+            // _MfgDate
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(59, 203);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Mfg. Date";
+            this._MfgDate.AutoSize = true;
+            this._MfgDate.Location = new System.Drawing.Point(59, 203);
+            this._MfgDate.Name = "_MfgDate";
+            this._MfgDate.Size = new System.Drawing.Size(54, 13);
+            this._MfgDate.TabIndex = 3;
+            this._MfgDate.Text = "Mfg. Date";
             // 
-            // label5
+            // _ExpDate
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(59, 241);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 13);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Exp. Date";
+            this._ExpDate.AutoSize = true;
+            this._ExpDate.Location = new System.Drawing.Point(59, 241);
+            this._ExpDate.Name = "_ExpDate";
+            this._ExpDate.Size = new System.Drawing.Size(54, 13);
+            this._ExpDate.TabIndex = 4;
+            this._ExpDate.Text = "Exp. Date";
             // 
-            // label6
+            // _Quantity
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(59, 278);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(23, 13);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Qty";
+            this._Quantity.AutoSize = true;
+            this._Quantity.Location = new System.Drawing.Point(59, 278);
+            this._Quantity.Name = "_Quantity";
+            this._Quantity.Size = new System.Drawing.Size(23, 13);
+            this._Quantity.TabIndex = 5;
+            this._Quantity.Text = "Qty";
             // 
-            // label7
+            // _SellPrice
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(59, 309);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(51, 13);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Sell Price";
+            this._SellPrice.AutoSize = true;
+            this._SellPrice.Location = new System.Drawing.Point(59, 309);
+            this._SellPrice.Name = "_SellPrice";
+            this._SellPrice.Size = new System.Drawing.Size(51, 13);
+            this._SellPrice.TabIndex = 6;
+            this._SellPrice.Text = "Sell Price";
             // 
-            // label8
+            // _Description
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(408, 119);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(60, 13);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Description";
+            this._Description.AutoSize = true;
+            this._Description.Location = new System.Drawing.Point(408, 119);
+            this._Description.Name = "_Description";
+            this._Description.Size = new System.Drawing.Size(60, 13);
+            this._Description.TabIndex = 7;
+            this._Description.Text = "Description";
             // 
             // btnAddProduct
             // 
@@ -204,16 +204,17 @@
             this.Controls.Add(this.txtProductName);
             this.Controls.Add(this.txtQuantity);
             this.Controls.Add(this.btnAddProduct);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this._Description);
+            this.Controls.Add(this._SellPrice);
+            this.Controls.Add(this._Quantity);
+            this.Controls.Add(this._ExpDate);
+            this.Controls.Add(this._MfgDate);
+            this.Controls.Add(this._Category);
+            this.Controls.Add(this._ProductName);
             this.Controls.Add(this.label1);
             this.Name = "frmAddProduct";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.frmAddProduct_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridViewProductList)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -223,13 +224,13 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label _ProductName;
+        private System.Windows.Forms.Label _Category;
+        private System.Windows.Forms.Label _MfgDate;
+        private System.Windows.Forms.Label _ExpDate;
+        private System.Windows.Forms.Label _Quantity;
+        private System.Windows.Forms.Label _SellPrice;
+        private System.Windows.Forms.Label _Description;
         private System.Windows.Forms.Button btnAddProduct;
         private System.Windows.Forms.TextBox txtQuantity;
         private System.Windows.Forms.TextBox txtProductName;
